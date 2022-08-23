@@ -11,7 +11,7 @@ namespace POrientacao_objetos_vetor
             double cpf, tel;
 
             Pessoa[] pessoa = new Pessoa[3];
-
+            //
 
             for (int i = 0; i < 3; i++)
             {
