@@ -8,12 +8,11 @@ namespace POrientacao_objetos_vetor
 {
     internal class Pessoa
     {
-        String nome;
-        int data_nascimento;
+        String nome, data_nascimento;
         double cpf, tel;
 
 
-        public Pessoa(string nome, int data_nascimento, double cpf, double tel) // método construtor  
+        public Pessoa(string nome, string data_nascimento, double cpf, double tel) // método construtor  
         {
             this.nome = nome;
             this.data_nascimento = data_nascimento;
@@ -27,7 +26,7 @@ namespace POrientacao_objetos_vetor
         {
             this.nome = nome;   // inserção de idade pelo usuario 
         }
-        public void setIdade(int data_nascimento) // método público para inserção de valores 
+        public void setIdade(String data_nascimento) // método público para inserção de valores 
         {
             this.data_nascimento = data_nascimento; // inserção de data de nascimento pelo usuario 
         }
@@ -44,7 +43,7 @@ namespace POrientacao_objetos_vetor
 
         public override String ToString() // override - escrever por cima 
         {
-            return "\n\nNome: " + nome + "\nData de Nascimento: " + data_nascimento + "\nTelefone: " + tel + "\nCPF: " + cpf;
+            return "\nNome: " + nome + "\nData de Nascimento: " + data_nascimento + "\nTelefone: " + tel + "\nCPF: " + cpf;
 
         }
     }
